@@ -1,3 +1,5 @@
+package msg;
+
 import java.util.Scanner;
 
 public class Message implements Runnable {
