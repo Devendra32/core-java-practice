@@ -8,7 +8,7 @@ public class JVMArch {
   public static void main(String[] args) {
 
     Student s1= new Student();
-    Class c1 = s1.getClass();
+    Class<? extends Student> c1 = s1.getClass();
 
     Field[] declaredFields = c1.getDeclaredFields();
     Method[] declaredMethods = c1.getDeclaredMethods();

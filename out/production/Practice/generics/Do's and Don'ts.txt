@@ -1,0 +1,11 @@
+1. 1. Only extends is allowed in Generic class definition
+
+2. extends is used for interfaces also
+
+3. extends from Only one class and multiple interfaces
+
+4. extends and super are allowed with ? In methods
+
+5. <? > will accept all types but cannot access
+
+6. Base type of an Object should be same or ?

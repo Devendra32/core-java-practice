@@ -1,7 +1,9 @@
 package date;
 
+import java.time.Clock;
 import java.time.LocalDate;
 import java.time.Month;
+import java.time.ZoneId;
 
 public class ClassA
 {
@@ -12,15 +14,12 @@ public class ClassA
         System.out.println("month :"+month);
 
         System.out.println("Current Date :"+todayDate);
-    }
-    public char meth2(String s)
-    {
-        char c = (char)(s.charAt(0) + 1);
-        return c;
+
+        System.out.println("clock"+LocalDate.now(ZoneId.of("ACT")));
     }
     public static void main(String[] args)
     {
-//        new ClassA().date();
-        System.out.println("=====> "+new ClassA().meth2("S"));
+        new ClassA().date();
+        
     }
 }
